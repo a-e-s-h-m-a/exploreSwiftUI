@@ -29,7 +29,6 @@ struct ToggleButton: View {
                             .foregroundColor(.blue)
                     }
                 }
-                .padding(8)
             }
         }
         .scaledToFit()

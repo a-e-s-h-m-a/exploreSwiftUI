@@ -12,9 +12,7 @@ struct TodoItemRow: View {
     
     var body: some View {
         HStack {
-            Button("button") {
-                todoItem.isDone.toggle()
-            }
+            ToggleButton(state: $todoItem.isDone)
             VStack(alignment: .leading) {
                 Text(todoItem.title)
                     .font(.headline)
