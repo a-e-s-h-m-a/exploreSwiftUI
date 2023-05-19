@@ -13,6 +13,7 @@ struct TodoItemRow: View {
     var body: some View {
         HStack {
             ToggleButton(state: $todoItem.isDone)
+                .frame(width: 40, height: 40)
             VStack(alignment: .leading) {
                 Text(todoItem.title)
                     .font(.headline)
@@ -27,7 +28,7 @@ struct TodoItemRow: View {
             Spacer()
         }
         .padding()
-        .frame(height: 70)
+//        .frame(height: 70)
     }
 }
 
